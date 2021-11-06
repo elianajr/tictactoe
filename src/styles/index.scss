@@ -1,9 +1,29 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-.smallSquare {
-    background-color: rgb(141, 222, 236);
-	border: 1px solid black;
-    height: 3rem;
-    width: 3rem;
-	
+body {
+    background-color: #272727;
+    color: white;
+}
+
+.table-game {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.square {
+    height: 10rem;
+    width: 10rem;
+    border: 3px groove white;
+    font-size: 5rem;
+    background-color: #626262;
+}
+
+button {
+    background-color:white;
+    border: none;
+    border-radius: 3px;
 }

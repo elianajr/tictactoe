@@ -6,11 +6,11 @@ const Square = props => {
 
 	return (
 		<div
-			className="smallSquare"
+			className="square"
 			onClick={() => {
 				if (!value) {
 					setValue(props.value);
-					props.changeTurn();
+					props.continueGame(props.position);
 				}
 			}}>
 			{value}
@@ -20,7 +20,8 @@ const Square = props => {
 
 Square.propTypes = {
 	value: PropTypes.string,
-	changeTurn: PropTypes.func
+	continueGame: PropTypes.func,
+	position: PropTypes.number
 };
 
 export default Square;
