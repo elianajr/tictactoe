@@ -49,8 +49,7 @@ const Home = () => {
 	return (
 		<div className="table-game">
 			<h4>Turn: {turn}</h4>
-			{/* {win && <h1>The winner is {turn}</h1>} */}
-
+			
 			<Row>
 				<Square value={turn} continueGame={continueGame} position={0} />
 				<Square value={turn} continueGame={continueGame} position={1} />
